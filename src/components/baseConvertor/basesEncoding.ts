@@ -54,4 +54,5 @@ const convertToDnaBases = (input: string) =>{
 
 }
 
+
 export default convertToDnaBases

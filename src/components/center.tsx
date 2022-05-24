@@ -1,6 +1,20 @@
+import { useState } from "react";
 import type { NextPage } from 'next';
+import BaseComponent from './baseConvertor/basesEncoding'
 
 const Center = () => {
+    const [text, setInput] = useState({
+        input: ""
+    });
+
+    let input: string;
+    let value: string;
+    const handleInput = (event: { target: { name: string; value: string; }; }) => {
+        input = event.target.name;
+        value = event.target.value;
+        setInput({ ...text, [input]: value });
+    }
+
     return (
         <>
             <div className="w-full-container">
@@ -17,7 +31,7 @@ const Center = () => {
                     </div>
                 </div>
                 <div className="flex w-full mt-8">
-                    <input type="text" placeholder="text" className="input w-full max-w-xm  focus:outline-none" />
+                    <input name="input" type="text" placeholder="text" className="input w-full max-w-xm  focus:outline-none" onChange={handleInput} />
                     <button className="btn btn-outline ml-2 btn-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
@@ -25,7 +39,7 @@ const Center = () => {
                     </button>
                 </div>
                 <div className="flex w-full mt-8 mb-8">
-                    <textarea className="textarea w-full h-26 focus:outline-none resize-none scrollbar-hide" placeholder="text convertToDnaBases"></textarea>
+                    <textarea value={BaseComponent(text.input)} className="textarea input-none w-full h-26 focus:outline-none resize-none scrollbar-hide" placeholder="GTGAGCGGGTCAGTGA" />
                     <div className="flex flex-col">
                         <button className="btn btn-outline ml-2 mb-2 btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

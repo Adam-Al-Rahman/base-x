@@ -5,7 +5,11 @@ import Link from "next/link"
 import Center from "../components/center"
 
 const Home: NextPage = () => {
+
+  const text: string = "Hello World";
+
   return (
+
     <>
       <div data-theme="night" >
         <Head>
@@ -16,8 +20,11 @@ const Home: NextPage = () => {
             <div className="navbar p-2 max-h-16 bg-secondary text-primary-content rounded-box">
               <Link href="/" ><button className="btn btn-ghost text-center font-ruslanDisplay font-bold text-2xl">Base-X</button></Link>
             </div>
-            <div className="m-2 text-center bg-base-100  rounded-box text-neutral-content font-bold">
-              Hello World in the world mine thank you.
+            <div className="mockup-code m-2 ">
+              <footer className="footer-center p-4 bg-cyan-700 text-base-300 font-bold text-xl rounded-box m-6">
+                <p>{text}</p>
+              </footer>
+              <p className="m-6 -mb-10">Hello World in the world of mine thank you.Hello World in the world of mine thank youHello World in the world of mine thank youHello World in the world of mine thank youHello World in the world of mine thank youHello World in the world of mine thank you.</p>
             </div>
             <footer className="footer sticky top-[100vh] max-h-24 footer-center p-2 bg-secondary text-base-content rounded-box">
               <div className="text-base-200 font-semibold" >
@@ -47,6 +54,27 @@ const Home: NextPage = () => {
             </footer>
           </div>
         </div>
+        <style>{`
+
+        *{
+              /* Track */
+              ::-webkit-scrollbar-track {
+              border-radius: 100vh;
+              background: #454a64;
+              }
+
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+              background: #bd93f9;
+              border-radius: 100vh;
+              border: 2px solid #454a64;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+              background: #50f87a;
+              }}
+        `}</style>
       </div >
     </>
   )
