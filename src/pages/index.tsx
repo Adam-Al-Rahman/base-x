@@ -16,7 +16,7 @@ const Home: NextPage = () => {
             <div className="navbar p-2 max-h-16 bg-secondary text-primary-content rounded-box">
               <Link href="/" ><button className="btn btn-ghost text-center font-ruslanDisplay font-bold text-2xl">Base-X</button></Link>
             </div>
-            <div className="m-2 text-center bg-primary rounded-box text-base-300 font-bold">
+            <div className="m-2 text-center bg-base-100  rounded-box text-neutral-content font-bold">
               Hello World in the world mine thank you.
             </div>
             <footer className="footer sticky top-[100vh] max-h-24 footer-center p-2 bg-secondary text-base-content rounded-box">
