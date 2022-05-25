@@ -14,12 +14,20 @@ const convertToDnaBases = (input: string) =>{
     // NOTE: Covert the input into the nitrogenous bases.
 
     const encoder = new TextEncoder()
+    const decoder = new TextDecoder()
     const text = encoder.encode(input)
+    const textDecode = decoder.decode(text)
+
+    console.log(`${textDecode}\n${text}`);
 
     let binary: string = ""
     text.forEach((item) => {
-        binary += item.toString(2).padStart(8, '0')
+        binary += item.toString(2).padStart(8, '0');
+        const currentItemBinary = item.toString(2).padStart(8, '0')
+        console.log(`item: ${currentItemBinary}`);
     })
+
+    console.log(binary);
 
     let twoBit:string[] = []
     for (let i:number = 0; i<binary.length; i+=2){
@@ -54,5 +62,6 @@ const convertToDnaBases = (input: string) =>{
 
 }
 
+console.log(convertToDnaBases("text"));
 
 export default convertToDnaBases
