@@ -8,7 +8,7 @@ const Message = () => {
                     <p>Text {`>>`} Base</p>
                 </div>
                 <p className="ml-6 mr-6">It is a way to convert the text into nitrogenous bases. First the text is converted into binary and then the binary is converted into nitrogenous bases. And now you can download the converted nitrogenous bases as a <code>fasta(.fasta)</code> file.</p>
-                <Link href="https://atiq-ur-rehaman.netlify.app/"><button className="btn btn-outline btn-primary m-4">Read More</button></Link>
+                <Link href="https://github.com/Adam-Al-Rahman/base-x#readme"><button className="btn btn-outline btn-primary m-4">Read More</button></Link>
             </footer>
         </>
     )

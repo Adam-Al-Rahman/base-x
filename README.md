@@ -18,7 +18,28 @@ Base-X
 
 It use the simple algorithm to convert the `text` into `base` as follows
 
+```ts
+/**
+- First the text is converted into binary.
+- Then the binary is converted into string.
+- After that the binary string is converted into the nitrogenous bases using the following object(in python dict).
+*/
+const dnaEncoding = {
+  '00': 'A', // adenine
+  '01': 'G', // guanine
+  '10': 'C', // cytosine
+  '11': 'T', // thymine
+}
+```
+
 ## Todo
 
 - [ ] Apply `Goldman encoding` & `Huffman encoding` method.
 - [ ] Convert `Base` >> `Text`.
+
+---
+
+<div align="center">
+  <a href="https://atiq-ur-rehaman.netlify.app"  target="_blank"> <img alt="Logo" align="left" src="public/plogo.png" width="80" /></a>
+  <p>Made by <a href="https://atiq-ur-rehaman.netlify.app"  target="_blank">Adam Al-Rahman</a>.</p>
+</div>
