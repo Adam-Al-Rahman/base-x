@@ -40,6 +40,6 @@ const dnaEncoding = {
 ---
 
 <div align="center">
-  <a href="https://atiq-ur-rehaman.netlify.app"  target="_blank"> <img alt="Logo" align="left" src="public/plogo.png" width="80" /></a>
-  <p>Made by <a href="https://atiq-ur-rehaman.netlify.app"  target="_blank">Adam Al-Rahman</a>.</p>
+  <a href="https://atiq-ur-rehaman.netlify.app"  target="_blank"> <img alt="Logo" src="public/plogo.png" width="80" /></a>
+  <p  >Made by <a href="https://atiq-ur-rehaman.netlify.app"  target="_blank">Adam Al-Rahman</a>.</p>
 </div>

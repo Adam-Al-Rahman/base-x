@@ -5,6 +5,7 @@ import Link from "next/link";
 import Center from "../components/center";
 import Footer from "../components/footer";
 
+
 const Home: NextPage = () => {
 
   const Name = `

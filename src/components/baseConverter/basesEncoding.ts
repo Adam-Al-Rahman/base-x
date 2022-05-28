@@ -13,6 +13,7 @@ export const toBase = ( input?: string) => {
     const encoder = new TextEncoder()
     const decoder = new TextDecoder()
     const text = encoder.encode(input)
+    // TODO: Convert the base into the text.
     const textDecode = decoder.decode(text)
 
     let binary: string = ""

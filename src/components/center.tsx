@@ -16,6 +16,8 @@ const Center: NextPage = () => {
         setInput({ ...text, [input]: value });
     }
 
+
+
     const convertedBases = BaseComponent(text.input);
 
     const copyText = () => {
@@ -53,21 +55,7 @@ const Center: NextPage = () => {
         a.remove();
     }
 
-    // const ctrlSlash = () => {
-
-
-    //     document?.addEventListener("keydown", (e) => {
-    //         const inputField = (document.getElementById("inputField") as HTMLInputElement);
-    //         if (e.ctrlKey && e.key == "/") {
-    //             inputField.focus();
-    //             inputField.select();
-    //             inputField.click();
-    //             console.log(e);
-    //         }
-    //     })
-    // };
-
-    // NOTE: To select the input field ctrl + /
+    // NOTE: To select the input field when keydown ctrl + /
     useEffect(() => {
         const inputField = (document.getElementById("inputField") as HTMLInputElement);
         const listener = (event: KeyboardEvent) => {
@@ -79,6 +67,7 @@ const Center: NextPage = () => {
         return () => {
             document.removeEventListener("keydown", listener);
         };
+
     }, []);
 
     return (
@@ -104,7 +93,7 @@ const Center: NextPage = () => {
                     </div>
                 </div>
                 <div className="flex w-full mt-8">
-                    <input name="input" type="text" id="inputField" placeholder="text" className="input w-full max-w-xm  focus:outline-none" onChange={handleInput} />
+                    <input name="input" type="text" id="inputField" placeholder="text" className="input w-full max-w-xm  mr-2" onChange={handleInput} />
                     <div className="hidden lg:flex kbd bg-neutral">
                         <kbd className="kbd bg-base-100 ml-2 kbd-sm pl-6 pr-6">ctrl</kbd><kbd className="kbd bg-base-100 kbd-sm">+</kbd><kbd className="kbd kbd-sm bg-base-100">/</kbd>
                     </div>
