@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2022
  *
  */
-export const toBase = ( input?: string) => {
+const convertToDnaBases = ( input: string) => {
     // NOTE: Covert the input into the nitrogenous bases.
     const encoder = new TextEncoder()
     const decoder = new TextDecoder()
@@ -56,14 +56,6 @@ export const toBase = ( input?: string) => {
 
 }
 
-const convertToDnaBases = (input?: string, file?: File) =>{
-    return toBase(input);
-}
-
-export const fileConvert = (file: File) => {
-
-}
 
 
-
-export default convertToDnaBases
+export default convertToDnaBases;
