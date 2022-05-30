@@ -22,6 +22,20 @@ const Home: NextPage = () => {
         {console.log(Name)}
         <Head>
           <title>Base-X</title>
+          <meta name="description" content="The converter that convert text into nitrogenous bases." />
+          <meta name="image" content="../../public/logo.png" />
+
+          <meta property="og:title" content="Base-X" />
+          <meta property="og:description" content="The converter that convert text into nitrogenous bases." />
+          <meta property="og:image" content="../../public/logo.png" />
+          <meta property="og:url" content="https://base-x.netlify.app/" />
+          <meta property="og:type" content="website" />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="Adam Al-Rahman" />
+          <meta name="twitter:title" content="Base-X" />
+          <meta name="twitter:description" content="The converter that convert text into nitrogenous bases." />
+          <meta name="twitter:image" content="../../public/logo.png" />
         </Head>
         <div className="flex flex-col w-full lg:flex-row min-h-screen bg-neutral ">
           <div className="hidden lg:grid m-5 p-5 max-w-sm flex-grow card bg-base-200 rounded-box">
