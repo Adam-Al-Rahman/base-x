@@ -14,10 +14,14 @@ const Center: NextPage = () => {
         input = event.target.name;
         value = event.target.value;
         setInput({ ...text, [input]: value });
+        (document.getElementById("copyButton") as HTMLInputElement).disabled = false;
+        (document.getElementById("downloadButton") as HTMLInputElement).disabled = false;
     }
 
     const extractedFileData = (event: ChangeEvent) => {
         let file = ((event.target as HTMLInputElement).files as FileList);
+        (document.getElementById("copyButton") as HTMLInputElement).disabled = false;
+        (document.getElementById("downloadButton") as HTMLInputElement).disabled = false;
         file[0].name
         const reader = new FileReader();
         reader.readAsText(file[0]);
@@ -41,6 +45,7 @@ const Center: NextPage = () => {
 
         (document.getElementById("outputTextArea") as HTMLTextAreaElement).value = "";
         (document.getElementById("inputField") as HTMLInputElement).value = "";
+
 
         ButtonClicked = true;
         return ButtonClicked;
