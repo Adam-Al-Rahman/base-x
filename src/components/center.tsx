@@ -58,7 +58,6 @@ const Center: NextPage = () => {
     const copyText = (sequence: string, text: string) => {
         if (text) {
             navigator.clipboard.writeText(sequence);
-            console.log(sequence);
             const copyButton = (document.getElementById("copyButton") as HTMLElement).innerHTML;
             (document.getElementById("copyButton") as HTMLElement).innerHTML = "copied!";
             setTimeout(() => {
@@ -71,7 +70,6 @@ const Center: NextPage = () => {
 
         if (text) {
             const data = `>Base-X | file: base-x.fasta | converted the text to nitrogenous bases |sequence\n${sequence}`;
-            console.log(data);
             const blob = new Blob([data], { type: "fasta" });
 
             const href = URL.createObjectURL(blob);
