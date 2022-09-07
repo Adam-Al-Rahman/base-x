@@ -39,6 +39,7 @@ const dnaEncoding = {
 
 - [ ] Apply `Goldman encoding` & `Huffman encoding` method.
 - [ ] Convert `Base` >> `Text`.
+- [ ] 404 Page.
 
 ## Tools || Libraries used to build the site
 
