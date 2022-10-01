@@ -49,6 +49,10 @@ const dnaEncoding = {
 - TailwindCss (for styling)
 - Netlify (Deploying)
 
+## License
+
+Base-X has a MIT-style license, as found in the [MIT License](./LICENSE) file.
+
 ---
 
 <div align="center">
